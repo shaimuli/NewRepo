@@ -5,7 +5,7 @@
   <author href="http://cordova.io" email="dev@cordova.apache.org">Apache Cordova Team </author>
   <content src="index.html" />
   <access origin="*" />
-  <icon src="res/icon.png" />
+  <icon src="icon.png" />
   <preference name="SplashScreen" value="splash" />
   <preference name="windows-target-version" value="8.0" />
   <preference name="windows-phone-target-version" value="8.1" />
