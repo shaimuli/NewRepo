@@ -111,6 +111,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="images\" />
+    <Content Include="icon.png" />
     <Content Include="merges\android\scripts\android2.3-jscompat.js" />
     <Content Include="merges\android\scripts\platformOverrides.js" />
     <Folder Include="merges\ios\" />
@@ -130,6 +131,7 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="index.html" />
+    <Content Include="res\icons\icon.png" />
     <Content Include="scripts\index.js" />
     <Content Include="scripts\platformOverrides.js" />
     <Content Include="css\index.css" />
