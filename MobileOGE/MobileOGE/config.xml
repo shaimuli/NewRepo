@@ -4,6 +4,12 @@
   <description>OGE delek</description>
   <author href="http://cordova.io" email="dev@cordova.apache.org">YomTov LTD</author>
   <content src="index.html" />
+  <icon src="icon.png" />
+
+  <icon src="res/icon/android/icon-36-ldpi.png" />
+  <icon src="res/icon/android/icon-48-mdpi.png" />
+  <icon src="res/icon/android/icon-72-hdpi.png"/>
+  <icon src="res/icon/android/icon-96-xhdpi.png" />
   <access origin="*" />
   <preference name="permissions" value="none" />
   <preference name="orientation" value="default" />

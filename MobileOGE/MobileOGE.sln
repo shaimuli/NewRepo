@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{262852C6-CD72-467D-83FE-5EEB1973A190}") = "MobileOGE", "mobileShay\MobileOGE.jsproj", "{6015401A-56AE-4B22-8F92-61720D221A13}"
+Project("{262852C6-CD72-467D-83FE-5EEB1973A190}") = "MobileOGE", "MobileOGE\MobileOGE.jsproj", "{6015401A-56AE-4B22-8F92-61720D221A13}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
