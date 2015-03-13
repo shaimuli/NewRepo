@@ -33,7 +33,7 @@
     <div ng-controller="headerController" ng-cloak
          style="margin: 0; padding: 0; border: none;">
         <div class="banner">
-            <nav id="Toolbar-Top" class="pull-right">
+            <!--<nav id="Toolbar-Top" class="pull-right">
                 <a href="#/albums" ng-class="{ selected: activeTab == 'albums'}">
                     <img src="images/record.png" title="Albums" /> <span>Albums</span>
                 </a>
@@ -43,9 +43,12 @@
                 <a href="#/options" ng-class="{ selected: activeTab == 'options'}">
                     <img src="images/gear.png" title="Options" /> <span>Options</span>
                 </a>
-            </nav>
+            </nav>-->
             <nav id="TopMenu" class="pull-right">
-                <form style="float: left; width: 140px; padding-top: 2px;">
+                <a href="#/options" ng-class="{ selected: activeTab == 'options'}">
+                    <img src="images/gear.png" title="Options" /> <span>אפשרויות</span>
+                </a>
+                <!--<form style="float: left; width: 140px; padding-top: 2px;">
                     <input id="SearchBox" type="text"
                            class="form-control" placeholder="Search..."
                            ng-model="searchText"
@@ -55,7 +58,7 @@
                 </form>
                 <a ng-click="showSearch()" ng-hide="searchVisible || !searchAllowed">
                     <img src="images/search.png" /> <span>Search</span>
-                </a>
+                </a>-->
             </nav>
         </div>
         <div id="MainView" autoscroll="true" ng-cloak
@@ -63,7 +66,8 @@
              ng-view>
         </div>
 
-        <div class="banner banner-bottom">
+       
+        <!--<div class="banner banner-bottom">
             <nav id="Toolbar">
                 <a href="#/albums" ng-class="{ selected: activeTab == 'albums'}">
                     <img src="images/record.png" title="Albums" /> <span>Albums</span>
@@ -75,7 +79,7 @@
                     <img src="images/gear.png" title="Options" /> <span>Options</span>
                 </a>
             </nav>
-        </div>
+        </div>-->
     </div>
 
     <script src="cordova.js"></script>
