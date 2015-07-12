@@ -1,4 +1,4 @@
-<div ng-controller="albumsController as view" class="container container-fluid">
+﻿<div ng-controller="albumsController as view" class="container container-fluid">
     <div class="alert alert-dismissable alert-{{view.error.icon}}"
          ng-show="view.error.message"
          role="alert">
@@ -7,11 +7,11 @@
         </button>
         <span ng-bind="view.error.message"></span>
     </div>
-    <div class="page-header-text"><i class="fa fa-list"></i> ????? </div>
+    <div class="page-header-text"><i class="fa fa-list"></i> תפריט </div>
     <div class="ui-field-contain">
         <label for="select-native-1">  </label>
         <select name="slider-1" id="slider-1">
-            <option value="he-IL">?????</option>
+            <option value="he-IL">עברית</option>
             <option value="en-US">English</option>
             <option value="ru-RU">Russian</option>
         </select>
@@ -20,14 +20,14 @@
     <br />
     <div class="album">
         <div>
-            <a style="text-align: right;font-size: 1.6em" id="lnkandrCounter" href="http://oge.co.il/andrCounter" onclick="lnkandrCounter_Click();" data-rel="dialog" data-ajax="false"><i class='fa fa-align-left'></i> ???? ?????</a>
+            <a style="text-align: right;font-size: 1.6em" id="lnkandrCounter" href="http://oge.co.il/andrCounter" onclick="lnkandrCounter_Click();" data-rel="dialog" data-ajax="false"><i class='fa fa-align-left'></i> דווח מונים</a>
         </div>
     </div>
     <br />
 
     <div class="album">
         <div>
-            <a style="text-align: right;font-size: 1.6em" id="lnkandrInventory" href="http://oge.co.il/andrInventory" onclick="lnkandrInventory_Click();" data-ajax="false"><i class='fa fa-align-left'></i> ???? ????</a>
+            <a style="text-align: right;font-size: 1.6em" id="lnkandrInventory" href="http://oge.co.il/andrInventory" onclick="lnkandrInventory_Click();" data-ajax="false"><i class='fa fa-align-left'></i> דווח מלאי</a>
         </div>
     </div>
     <br />
@@ -41,12 +41,12 @@
             slider_value = $("#slider-1").val();
             switch (slider_value) {
                 case "he-IL":
-                    $("#lnkandrCounter").text("???? ?????");
-                    $("#lnkandrInventory").text("???? ????");
+                    $("#lnkandrCounter").text("דווח מונים");
+                    $("#lnkandrInventory").text("דווח מלאי");
                     break;
                 case "ru-RU":
-                    $("#lnkandrCounter").text("????? ???????? ???????");
-                    $("#lnkandrInventory").text("???? ????");
+                    $("#lnkandrCounter").text("Отчет доставки топлива");
+                    $("#lnkandrInventory").text("דווח מלאי");
                     break;
                 case "en-US":
                     $("#lnkandrCounter").text("Report Counter");
@@ -63,12 +63,12 @@
         slider_value = $("#slider-1").val();
         switch (slider_value) {
             case "he-IL":
-                $("#lnkandrCounter").text("???? ?????");
-                $("#lnkandrInventory").text("???? ????");
+                $("#lnkandrCounter").text("דווח מונים");
+                $("#lnkandrInventory").text("דווח מלאי");
                 break;
             case "ru-RU":
-                $("#lnkandrCounter").text("????? ???????? ???????");
-                $("#lnkandrInventory").text("???? ????");
+                $("#lnkandrCounter").text("Отчет доставки топлива");
+                $("#lnkandrInventory").text("דווח מלאי");
                 break;
             case "en-US":
                 $("#lnkandrCounter").text("Report Counter");
