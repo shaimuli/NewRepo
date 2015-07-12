@@ -1,18 +1,96 @@
-<div ng-controller="artistsController as view" class="container container-fluid">
+<div ng-controller="albumsController as view" class="container container-fluid">
+    <div class="alert alert-dismissable alert-{{view.error.icon}}"
+         ng-show="view.error.message"
+         role="alert">
+        <button type="button" class="close" data-dismiss="alert">
+            <span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+        </button>
+        <span ng-bind="view.error.message"></span>
+    </div>
+    <div class="page-header-text"><i class="fa fa-list"></i> ????? </div>
+    <div class="ui-field-contain">
+        <label for="select-native-1">  </label>
+        <select name="slider-1" id="slider-1">
+            <option value="he-IL">?????</option>
+            <option value="en-US">English</option>
+            <option value="ru-RU">Russian</option>
+        </select>
+    </div>
+    <hr style="margin-top: 6px;" />
+    <br />
+    <div class="album">
+        <div>
+            <a style="text-align: right;font-size: 1.6em" id="lnkandrCounter" href="http://oge.co.il/andrCounter" onclick="lnkandrCounter_Click();" data-rel="dialog" data-ajax="false"><i class='fa fa-align-left'></i> ???? ?????</a>
+        </div>
+    </div>
+    <br />
 
+    <div class="album">
+        <div>
+            <a style="text-align: right;font-size: 1.6em" id="lnkandrInventory" href="http://oge.co.il/andrInventory" onclick="lnkandrInventory_Click();" data-ajax="false"><i class='fa fa-align-left'></i> ???? ????</a>
+        </div>
+    </div>
+    <br />
 
-    
-    <div class="list-group">
-        <a href="#" class="list-group-item active">
-            <i class="fa fa-list"></i> Artists 
-            <span class="badge">{{view.artists.length}}</span>
-        </a>
-
-        <a class="list-group-item"
-           ng-repeat="artist in view.artists | filter: view.searchText "
-           ng-href="#/artist/{{artist.Id}}">
-            <span class="badge">{{artist.AlbumCount}}</span>
-            {{artist.ArtistName}}
-        </a>
-    </div>  
 </div>
+<script src="../../scripts/jquery.js"></script>
+<script>
+    $(document).on('pageinit', '.ui-page', function (event) {
+        setTimeout(function () {
+            $('#slider-1').popup('open');
+            slider_value = $("#slider-1").val();
+            switch (slider_value) {
+                case "he-IL":
+                    $("#lnkandrCounter").text("???? ?????");
+                    $("#lnkandrInventory").text("???? ????");
+                    break;
+                case "ru-RU":
+                    $("#lnkandrCounter").text("????? ???????? ???????");
+                    $("#lnkandrInventory").text("???? ????");
+                    break;
+                case "en-US":
+                    $("#lnkandrCounter").text("Report Counter");
+                    $("#lnkandrInventory").text("Report Inventory");
+                    break;
+            }
+
+        }, 0);
+    })
+    var slider_value = "";
+    var hreflnkandrCounter = $('#lnkandrCounter').attr('href');
+    var hreflnkandrInventory = $('#lnkandrInventory').attr('href');
+    $("#slider-1").on('change', function (event) {
+        slider_value = $("#slider-1").val();
+        switch (slider_value) {
+            case "he-IL":
+                $("#lnkandrCounter").text("???? ?????");
+                $("#lnkandrInventory").text("???? ????");
+                break;
+            case "ru-RU":
+                $("#lnkandrCounter").text("????? ???????? ???????");
+                $("#lnkandrInventory").text("???? ????");
+                break;
+            case "en-US":
+                $("#lnkandrCounter").text("Report Counter");
+                $("#lnkandrCounter").text("Report Counter");
+                break;
+        }
+        slider_value = $("#slider-1").val();
+        document.getElementById("lnkandrCounter").setAttribute("href", hreflnkandrCounter + "?lang=" + slider_value);
+        document.getElementById("lnkandrInventory").setAttribute("href", hreflnkandrInventory + "?lang=" + slider_value);
+    });
+
+    function lnkandrCounter_Click() {
+        var hreflnkandrCounter = $('#lnkandrCounter').attr('href');
+        slider_value = $("#slider-1").val();
+        document.getElementById("lnkandrCounter").setAttribute("href", hreflnkandrCounter + "?lang=" + slider_value);
+    }
+
+    function lnkandrInventory_Click() {
+        var hreflnkandrInventory = $('#lnkandrInventory').attr('href');
+        slider_value = $("#slider-1").val();
+        document.getElementById("lnkandrInventory").setAttribute("href", hreflnkandrInventory + "?lang=" + slider_value);
+    }
+
+
+</script>
