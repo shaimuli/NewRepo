@@ -20,13 +20,13 @@
 
     <div class="album">
         <div>
-            <a style="text-align: right;font-size: 1.6em" id="lnkandr" href="http://oge.co.il/andr" onclick="lnkandr_Click();" data-rel="dialog" data-ajax="false"><i class='fa fa-align-left'></i> דווח אספקת דלקים</a>
+            <a style="text-align: right;font-size: 1.6em" id="lnkandr" href="http://oge.co.il/andr" onclick="lnkandr_Click();" data-rel="dialog" data-ajax="false"><i class='fa fa-align-left'></i> דווח קבלת דלק למלאי</a>
         </div>
     </div>
     <br />
     <div class="album">
         <div>
-            <a style="text-align: right;font-size: 1.6em" id="lnkandrCounter" href="#/artists" ng-class="{ selected: activeTab == 'artist'}" onclick="lnkandrCounter_Click();" data-rel="dialog" data-ajax="false"><i class='fa fa-align-left'></i> דווח מלאים</a>
+            <a style="text-align: right;font-size: 1.6em" id="lnkandrCounter" href="#/artists" ng-class="{ selected: activeTab == 'artist'}" onclick="lnkandrCounter_Click();" data-rel="dialog" data-ajax="false"><i class='fa fa-align-left'></i>דיווח מונים ומלאי</a>
         </div>
     </div>
     <br />
@@ -68,7 +68,7 @@
             slider_value = $("#slider-1").val();
             switch (slider_value) {
                 case "he-IL":
-                    $("#lnkandr").text("דווח אספקת דלקים");
+                    $("#lnkandr").text("דווח קבלת דלק למלאי");
                     $("#lnkandrCounter").text("דווח מונים");
                     $("#lnkandrManualReport").text("דווח תדלוקים ידניים");
                     $("#lnkandrandrTechnic").text("דווח קריאות שירות");
@@ -99,7 +99,7 @@
         slider_value = $("#slider-1").val();
         switch (slider_value) {
             case "he-IL":
-                $("#lnkandr").text("דווח אספקת דלקים");
+                $("#lnkandr").text("דווח קבלת דלק למלאי");
                 $("#lnkandrCounter").text("דווח מונים");
                 $("#lnkandrManualReport").text("דווח תדלוקים ידניים");
                 $("#lnkandrandrTechnic").text("דווח קריאות שירות");
