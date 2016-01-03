@@ -227,7 +227,7 @@ input.ng-invalid,textarea.ng-invalid,select.ng-invalid {
 @media (max-width: 690px) {
     .album {
         max-width: 100% !important;
-        min-height: 50px;
+        min-height: 70px;
     }
 
     #Toolbar-Top {
