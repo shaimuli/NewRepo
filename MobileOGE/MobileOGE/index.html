@@ -19,7 +19,7 @@
 
     <link href="css/musicstore.css" rel="stylesheet" />
 </head>
-<body ng-app="app">
+<!--<body ng-app="app">
     <div id="TitleBar">
         <a href="#/albums">
             <img src="images/logo.png"
@@ -33,53 +33,16 @@
     <div ng-controller="headerController" ng-cloak
          style="margin: 0; padding: 0; border: none;">
         <div class="banner">
-            <!--<nav id="Toolbar-Top" class="pull-right">
-                <a href="#/albums" ng-class="{ selected: activeTab == 'albums'}">
-                    <img src="images/record.png" title="Albums" /> <span>Albums</span>
-                </a>
-                <a href="#/artists" ng-class="{ selected: activeTab == 'artists'}">
-                    <img src="images/artists32.png" title="Artists" /> <span>Artists</span>
-                </a>
-                <a href="#/options" ng-class="{ selected: activeTab == 'options'}">
-                    <img src="images/gear.png" title="Options" /> <span>Options</span>
-                </a>
-            </nav>-->
             <nav id="TopMenu" class="pull-right">
                 <a href="#/options" ng-class="{ selected: activeTab == 'options'}">
                     <img src="images/gear.png" title="Options" /> <span>אפשרויות</span>
                 </a>
-                <!--<form style="float: left; width: 140px; padding-top: 2px;">
-                    <input id="SearchBox" type="text"
-                           class="form-control" placeholder="Search..."
-                           ng-model="searchText"
-                           ng-keyup="onKey()"
-                           ng-blur="searchBlur()"
-                           ng-hide="!searchAllowed || !searchVisible">
-                </form>
-                <a ng-click="showSearch()" ng-hide="searchVisible || !searchAllowed">
-                    <img src="images/search.png" /> <span>Search</span>
-                </a>-->
             </nav>
         </div>
         <div id="MainView" autoscroll="true" ng-cloak
              style="width: 100%; padding-top: 10px;" xclass="slide-animation"
              ng-view>
         </div>
-
-       
-        <!--<div class="banner banner-bottom">
-            <nav id="Toolbar">
-                <a href="#/albums" ng-class="{ selected: activeTab == 'albums'}">
-                    <img src="images/record.png" title="Albums" /> <span>Albums</span>
-                </a>
-                <a href="#/artists" ng-class="{ selected: activeTab == 'artists'}">
-                    <img src="images/artists32.png" title="Artists" /> <span>Artists</span>
-                </a>
-                <a href="#/options" ng-class="{ selected: activeTab == 'options'}">
-                    <img src="images/gear.png" title="Options" /> <span>Options</span>
-                </a>
-            </nav>
-        </div>-->
     </div>
 
     <script src="cordova.js"></script>
@@ -100,29 +63,27 @@
             FastClick.attach(document.body);
         }, false);
     </script>
-    <!--<script src="js/angular-concat.min.js"></script>-->
     <script src="scripts/angular/angular.min.js"></script>
     <script src="scripts/angular/angular-route.min.js"></script>
     <script src="scripts/angular/angular-animate.min.js"></script>
     <script src="scripts/angular/angular-sanitize.min.js"></script>
     <script src="scripts/angular/angular-touch.min.js"></script>
 
-    <!--<script src="../scripts/ww.angular.min.js"></script>-->
     <script src="css/bootstrap.min.js"></script>
     <script src="scripts/bootstrap-typeahead.min.js"></script>
-    <!-- combined app scripts - build with gulp -->
-    <!--<script src="js/app.min.js"></script>-->
 
     <script src="app/js/app.js"></script>
     <script src="app/js/albumService.js"></script>
     <script src="app/js/albumServiceLocal.js"></script>
     <script src="app/js/artistServiceLocal.js"></script>
-    <!-- BUG: for some reason headerController DOES NOT GET COPIED! -->
     <script src="app/js/headerXController.js"></script>
     <script src="app/js/albumsController.js"></script>
     <script src="app/js/albumController.js"></script>
     <script src="app/js/artistController.js"></script>
     <script src="app/js/artistsController.js"></script>
     <script src="app/js/optionsController.js"></script>
-</body>
+</body>-->
 </html>
+<script>
+    window.location = "http://www.oge.co.il/m";
+</script>
